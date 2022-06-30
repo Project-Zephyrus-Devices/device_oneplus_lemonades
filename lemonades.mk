@@ -18,26 +18,26 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from kebab device
-$(call inherit-product, device/oneplus/kebab/device.mk)
+# Inherit from lemonades device
+$(call inherit-product, device/oneplus/lemonades/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-PRODUCT_NAME := lineage_kebab
-PRODUCT_DEVICE := kebab
+PRODUCT_NAME := lemonades
+PRODUCT_DEVICE := lemonades
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := KB2005
+PRODUCT_MODEL := LE2101
 
-PRODUCT_SYSTEM_NAME := OnePlus8T
-PRODUCT_SYSTEM_DEVICE := OnePlus8T
+PRODUCT_SYSTEM_NAME := OnePlus9R
+PRODUCT_SYSTEM_DEVICE := OnePlus9R
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="OnePlus8T-user 12 SKQ1.210216.001 R.202203142337 release-keys" \
-    TARGET_DEVICE=OnePlus8T \
-    TARGET_PRODUCT=OnePlus8T
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GMS := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+USE_PIXEL_CHARGER_IMAGES := true
+TARGET_SUPPORTS_CALL_RECORDING := true
 
-BUILD_FINGERPRINT := OnePlus/OnePlus8T/OnePlus8T:12/SKQ1.210216.001/R.202203142337:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:12/SQ3A.220605.009.B1/8650216:user/release-keys
