@@ -41,6 +41,13 @@ odm/lib64/camera/com.qti_lemonades.sensor.imx471.so
 odm/lib64/camera/com.qti_lemonades.sensor.imx481.so
 odm/lib64/camera/com.qti_lemonades.sensor.imx586.so
 
+# Charger
+odm/bin/hw/vendor.oplus.hardware.charger@1.0-service
+odm/etc/init/vendor.oplus.hardware.charger@1.0-service.rc
+odm/etc/vintf/manifest/manifest_oplus_charger.xml
+odm/firmware/fastchg/20828/oplus_vooc_fw_rk826.bin
+odm/lib64/vendor.oplus.hardware.charger@1.0.so
+
 # Fingerprint
 odm/vendor/firmware/gfp9638.b00
 odm/vendor/firmware/gfp9638.b01
@@ -110,6 +117,11 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
+# NFC
+odm/etc/nfc/libnfc-mtp-SN100.conf_20828:vendor/etc/libnfc-mtp-SN100.conf
+odm/etc/nfc/libnfc-nci.conf_20828:vendor/etc/libnfc-nci.conf
+odm/lib/libsn100u_fw.so:vendor/lib/libsn100u_fw.so
+
 # Sensors
 odm/etc/sensor/config/kona_qrd_ak991x_0.json
 odm/etc/sensor/config/kona_qrd_alsps.json
@@ -122,7 +134,6 @@ odm/etc/sensor/config/kona_qrd_lsm6dso.json
 odm/etc/sensor/config/kona_qrd_mmc56x3x.json
 odm/etc/sensor/config/kona_qrd_sx933x_0.json
 odm/etc/sensor/config/kona_qrd_tcs3408_rear.json
-odm/etc/sensor/sensor_config.json
 odm/etc/sensor/sensor_config.json
 
 # WiFi
