@@ -117,11 +117,6 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
-# NFC
-odm/etc/nfc/libnfc-mtp-SN100.conf_20828:vendor/etc/libnfc-mtp-SN100.conf
-odm/etc/nfc/libnfc-nci.conf_20828:vendor/etc/libnfc-nci.conf
-odm/lib/libsn100u_fw.so:vendor/lib/libsn100u_fw.so
-
 # Sensors
 odm/etc/sensor/config/kona_qrd_ak991x_0.json
 odm/etc/sensor/config/kona_qrd_alsps.json
